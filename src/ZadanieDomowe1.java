@@ -1,6 +1,6 @@
 public class ZadanieDomowe1 {
     public static void main(String[] args) {
-        int jeden = 1212;
+        int jeden = 1217;
         int dwa = 32;
         int trzy = 123;
         int cztery = 3;
