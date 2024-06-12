@@ -50,15 +50,18 @@ public class Computer {
 
     public void switchON() {
         System.out.println("Super - ustawiam pole state na true");
-        this.state = true;
+        state = true;
     }
 
     public void switchOFF() {
-        this.state = false;
+        System.out.println("Wyłączam komputer: " + name);
+        state = false;
     }
     public boolean getState() {
         return state;
     }
+
+
 
 
 }
