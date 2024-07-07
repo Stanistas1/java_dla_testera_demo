@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class Bug {
     private static String opisBledu;
     private static String email;
@@ -73,5 +75,37 @@ public class Bug {
 
     public String showAllBugInfo() {
         return "Opis błędu: " + opisBledu + ", Email: " + email + ", Priorytet: " + priorytetBledu;
+    }
+
+    public Bug(boolean showAllBugInfo) {
+        this.showAllBugInfo = showAllBugInfo;
+    }
+
+    public boolean isShowAllBugInfo() {
+        return showAllBugInfo;
+    }
+
+    public void setShowAllBugInfo(boolean showAllBugInfo) {
+        this.showAllBugInfo = showAllBugInfo;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Bug bug = (Bug) o;
+        return showAllBugInfo == bug.showAllBugInfo;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(showAllBugInfo);
+    }
+
+    @Override
+    public String toString() {
+        return "Bug{" +
+                "showAllBugInfo=" + showAllBugInfo +
+                '}';
     }
 }

@@ -78,11 +78,17 @@ public class MainApp {
         //    int [] newNumbers = {1, 2, 3, 4, 5};
 
 
-        User u1 = new User("Bartek", "Testpwy", "b@test.com", 17);
+     /*   User u1 = new User("Bartek", "Testpwy", "b@test.com", 17);
         User u2 = new User("Bartek", "Testpwy", "b@test.com", 17);
         User u3 = new User("Bartek", "Testpwy", "b@test.com", 17);
         User u4 = new User("Bartek", "Testpwy", "b@test.com", 17);
 
-        System.out.println(User.getUserCountert());
+        System.out.println(User.getUserCountert());*/
+
+        User bartek = new User("Bartek", "Testowy", "b@t.pl", 20);
+        User bartek1 = new User("Bartek", "Testowy", "b@t.pl", 20);
+
+        System.out.println(bartek);
+        System.out.println(bartek.equals(bartek1));
     }
 }
