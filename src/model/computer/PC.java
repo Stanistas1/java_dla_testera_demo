@@ -4,7 +4,7 @@ public class PC extends Computer {
 
     private int computerPower;
 
-    public PC(String name, String type, Hdd hdd, Ram ram, int computerPower) {
+    public PC(String name, String type, Hdd hdd, Ram ram) {
         super(name, type, hdd, ram);
         this.computerPower = computerPower;
     }
